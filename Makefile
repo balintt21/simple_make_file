@@ -3,7 +3,7 @@ CC_FLAGS = -O3 -Wall
 LD_FLAGS =
 NAME = myprogram
 SOURCE_DIR = ./src
-SOURCE_FILES = $(shell find $(SOURCE_DIR) -type f -name '*.cpp' )
+SOURCE_FILES = $(shell find $(SOURCE_DIR) -type f -iregex '.*\.\(c\|i\|ii\|cc\|cp\|cxx\|cpp\|CPP\|c++\|C\|s\|S\|sx\)' )
 OUTPUT_DIR = ./output
 
 all: $(OUTPUT_DIR) $(SOURCE_FILES) 
