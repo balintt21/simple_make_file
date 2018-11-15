@@ -15,7 +15,7 @@ install: all
 
 .PHONY: clean
 clean: 
-	rm -r $(OUTPUT_DIR)
+	rm -rf $(OUTPUT_DIR)
 
 $(OUTPUT_DIR):
 	mkdir $(OUTPUT_DIR)
