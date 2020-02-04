@@ -3,7 +3,7 @@ CC_FLAGS = -O3 -Wall
 LD_FLAGS =
 NAME = myprogram
 SOURCE_DIR = ./src
-SOURCE_FILES = $(shell find -L $(SOURCE_DIR) -type f,l -iregex '.*\.\(c\|i\|ii\|cc\|cp\|cxx\|cpp\|CPP\|c++\|C\|s\|S\|sx\)' )
+SOURCE_FILES = $(shell find -L $(SOURCE_DIR) -xtype f,l -iregex '.*\.\(c\|i\|ii\|cc\|cp\|cxx\|cpp\|CPP\|c++\|C\|s\|S\|sx\)' )
 OUTPUT_DIR = ./output
 INSTALL_DIR = /usr/local/bin
 
