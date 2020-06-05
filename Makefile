@@ -9,6 +9,10 @@ INSTALL_DIR = /usr/local/bin
 
 all: $(OUTPUT_DIR) $(SOURCE_FILES) 
 	$(CC) $(CC_FLAGS) $(SOURCE_FILES) -o "$(OUTPUT_DIR)/$(NAME)" $(LD_FLAGS)
+	
+.PHONY: majom
+majom: all
+	echo "There is no such thing as "MakiMajom" because lemurs and monkeys are distinct mammals!
 
 .PHONY: install
 install: all
