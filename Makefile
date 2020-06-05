@@ -12,7 +12,7 @@ all: $(OUTPUT_DIR) $(SOURCE_FILES)
 	
 .PHONY: majom
 majom: all
-	echo "There is no such thing as "MakiMajom" because lemurs and monkeys are distinct mammals!
+	echo "There is no such thing as 'MakiMajom' because lemurs and monkeys are distinct mammals!"
 
 .PHONY: install
 install: all
